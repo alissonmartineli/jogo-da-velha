@@ -3,6 +3,9 @@ let winner = '';
 const places = {};
 const elements = document.getElementsByClassName('col');
 const message = document.getElementById('message');
+const btnReset = document.getElementById('reset');
+
+btnReset.addEventListener('click', () => reset());
 
 for (const el of elements) {
     el.addEventListener('click', () => mark(el));
@@ -65,4 +68,17 @@ function checkWin() {
     }
 
     return false;
+}
+
+
+function reset() {
+    player = 'X';
+    winner = '';
+
+    for (const el of elements) {
+        el.innerHTML = '';
+        el.style.background = '#ddd';
+    }
+
+    message.innerHTML = '';
 }

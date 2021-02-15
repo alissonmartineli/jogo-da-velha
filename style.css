@@ -19,10 +19,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .board {
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .row {
@@ -40,11 +41,21 @@ body {
   height: 100px;
   margin: 10px;
   cursor: pointer;
-  background-color: gainsboro;
+  background-color: #ddd;
   font-size: 60px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 
 #message {
   font-size: 18px;
   font-weight: bold;
+  margin: 20px 0;
 }
