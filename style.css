@@ -22,7 +22,7 @@ body {
 }
 
 .board {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .row {
@@ -42,4 +42,9 @@ body {
   cursor: pointer;
   background-color: gainsboro;
   font-size: 60px;
+}
+
+#message {
+  font-size: 18px;
+  font-weight: bold;
 }
